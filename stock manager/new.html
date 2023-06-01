@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Html CRUD with Pure JavaScript
+    </title>
+    <link rel="stylesheet" href="new.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Item Name*</label><label class="validation-error hide" id="itemNameValidationError" >This field is required.</label>
+                        <input type="text" name="itemName" id="itemName" placeholder="Enter item name" value="Irish potatoes" readonly >
+                    </div>
+                    <div>
+                        <labe>Stock quantity</label>
+                        <input type="number" name="amount" id="amount" placeholder="200kg" required value="10" readonly>
+                    </div>
+                    <div>
+                        <label>Stock total amount</label>
+                        <input type="number" name="cost" id="cost" placeholder="RWF" required value="100" >
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Add item" style="font-weight:bold; font-family: Arial Black;color:darkgreen;">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th style="color:green">Item Name</th>
+                            <th style="color:green">Stock quantity</th>
+                            <th style="color:green">Stock total amount</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="new.js"></script>
+</body>
+
+</html>
+</body>
+</html>

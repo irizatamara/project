@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .label{
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            font-size: 21px;
+            padding-top: 60px;
+        }
+.input{
+    width: 90px;
+    background-color: rgb(148, 89, 89);
+    border-radius: 5px;
+    height: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', ;
+    border-color:  rgb(48, 43, 43);
+}
+
+.field1{
+    width: 600PX;
+   
+    backdrop-filter: blur(10px);
+    padding-top: 40px;
+    border-color:  rgb(48, 43, 43);
+    border-radius: 20px;
+    height: 240px;
+}
+
+.in{
+    width: 200px;
+    height: 25px;
+    border-radius: 5px;
+        border-color: rgb(48, 43, 43);
+}
+
+
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock manager</title>
+</head>
+<body >
+    
+    <div class="head">
+       
+        <nav>
+            <header class="head">
+            <a href="new.html"><li>Stock</li></a>
+            <a href="add.html">Adding</a>
+        </header>
+        </nav>
+    </div>
+    <div style="  background-image: url('ibirayi-bigisarurwa-.jpg'); height: 500px;">
+    <div style="padding-top: 120px;">
+           <center>
+   <fieldset class="field1" style="padding-top: 100px;"> 
+    <center>
+        <input type="number"  id="quantity" class="in" placeholder="Enter quantity in Kilograms" style="width:50%; height:40px; 
+        border-radius: 8px; text-align: center; font-family: 'Courier New', Courier, monospace; font-weight:bold; font-size:17px;" ">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button type="submit"  onclick="hello()" class="input">Enter</button><br>
+        <br><br>
+         <label id="answer" class="label">The Income:</label><br>
+     
+
+
+    <script>
+        function hello(){
+        const input=document.getElementById("quantity").value;
+        var result=document.getElementById("answer");
+        var remains=document.getElementById("remains");
+        var stock=100;
+        var valueRemaining=stock-input;
+        var income=valueRemaining*100;
+        
+
+        if(input==""){
+            alert("Please enter valid number");
+        }
+        else if(input>stock){
+            alert("Your stock is lower,Please try again!!");
+        }
+        else{
+            result.innerHTML="The income is:"+" "+income+""+"RWF"+"<br>"+"The remaining stock is:"+valueRemaining+""+"Kg";
+            console.log(result);
+            
+           
+        }
+        };
+   
+ </script>
+ </center>
+ </fieldset>
+</center>
+</div>
+</div>
+<br><br>
+<footer>
+    <div class="foot">
+        <center>     
+         <b class="gash">KINIGI SELLING GROUP</b>
+         
+        <br>
+    <b style="color: rgb(175, 172, 167);">copyright&copy;ibirayibyagashemere.com</b>
+    </center>
+
+    </div>
+</footer>
+</body>
+</html>

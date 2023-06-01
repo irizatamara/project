@@ -1,0 +1,91 @@
+
+nav ul li{
+    display: inline-block;
+    width: 550px;
+    text-align: center;
+    padding: 12px;
+    float: right;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(119, 52, 52);
+
+}
+.head{
+    background-color: rgba(37, 37, 37, 0.993);
+    color: aliceblue;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    float: right;
+}
+a{
+    float: right;
+    text-decoration: none;
+    color: white;
+    /* margin-left: px; */
+    /* justify-content: space-between; */
+    /* padding: 12px; */
+    height:20px;
+    width: 100px;
+    margin-top: 9px;
+    margin-right: 8px;
+    text-align: center;
+    padding: 12px;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+a:hover{
+    float: right;
+    text-decoration: none;
+    color: black;
+    /* margin-left: 12px; */
+    /* justify-content: space-between; */
+    /* padding: 12px; */
+    height: 20px;
+    background-color: beige;
+    width: 150px;
+    margin-top: 9px;
+    margin-right: 8px;
+    text-align: center;
+    padding: 12px;
+    border: 1px solid white;
+}
+.nmb{
+    width: 230px;
+    height: 30px;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 15px;
+}
+.nmb2{
+    width: 130px;
+    height: 40px;
+    font-weight: bold;
+    color:rgb(255, 245, 245);
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 15px;
+}
+.button{
+width: 90px;
+height: 30px;
+border-radius: 9px;
+border-color: rgb(173, 178, 182);
+border-style: 1px solid;
+}
+.foot{
+background-color: rgba(37, 37, 37, 0.993);
+height: 125px;
+}
+.bodi{
+background-image: url('ibirayi-bigisarurwa-.jpg');
+background-position: center;
+
+}
+.gash{
+font-size: 40px;
+font-family: 'Courier New', Courier, monospace,sans-serif;
+color: rgb(255, 250, 250);
+}
